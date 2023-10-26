@@ -11,12 +11,11 @@ import {
   HttpStatus,
   Query,
   ParseIntPipe,
-  ParseEnumPipe,
 } from '@nestjs/common';
 import { TransactionsService } from './services/transactions.service';
 import { CreateTransactionDto } from './dto/create-transaction.dto';
 import { UpdateTransactionDto } from './dto/update-transaction.dto';
-import { ActiveUserId } from 'src/shared/decorators/ActiveUserId';
+import ActiveUserId from 'src/shared/decorators/ActiveUserId';
 import { OptionalParseUUIDPipe } from './../../shared/pipes/OptionalParseUUIDPipe';
 import { TransactionType } from './entities/Transaction';
 import { OptionalParseEnumPipe } from 'src/shared/pipes/OptionalParseEnumPipe';
